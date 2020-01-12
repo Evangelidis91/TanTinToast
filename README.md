@@ -68,3 +68,40 @@ To display Normal Toast:
 ``` 
 TanTinToast.NormalToast(this).setText("Normal Toast").show()
 ```
+
+To display Custom Toast:
+``` 
+TanTinToast.CustomToast(this).setText("Custom Toast").show()
+```
+
+## Using Java
+
+To display an error Toast:
+``` 
+new TanTinToast.ErrorToast(this).setText("Error Toast ").show();
+```
+
+To display Success Toast:
+``` 
+new TanTinToast.SuccessToast(this).setText("Success Toast").show();
+```
+
+To display Info Toast:
+``` 
+new TanTinToast.InfoToast(this).setText("Info Toast").show();
+```
+
+To display Warning Toast:
+``` 
+new TanTinToast.WarningToast(this).setText("Warning Toast").show();
+```
+
+To display Normal Toast:
+``` 
+new TanTinToast.NormalToast(this).setText("Normal Toast").show();
+```
+
+To display Custom Toast:
+``` 
+new TanTinToast.CustomToast(this).setText("Custom Toast").show();
+```
