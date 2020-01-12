@@ -117,7 +117,7 @@ new TanTinToast.CustomToast(this).setText("Custom Toast").show();
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use this method if you want to use a specific Font Family for the text
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First you have to import the libraries below
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import android.graphics.Typeface
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import androidx.core.content.res.ResourcesCompat
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```
+```
+import android.graphics.Typeface
+import androidx.core.content.res.ResourcesCompat
+```
