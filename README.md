@@ -156,4 +156,4 @@ Reference-style:
 ![alt text][logo]
 
 
-[logo]: https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/custom.png
+[logo]: https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/custom.png 
