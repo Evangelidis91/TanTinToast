@@ -112,6 +112,8 @@ new TanTinToast.CustomToast(this).setText("Custom Toast").show();
 ```
 Use ```Toast.LENGTH_LONG``` or ```Toast.LENGTH_SHORT``` for setting the displaying time.
 
+
+
 ### Customize Toast message FontFamily
 ```
 .setTypeface(font)
@@ -129,3 +131,11 @@ And finaly add the method like this
 ```
 new TanTinToast.SuccessToast(this).setText("Success Toast").setTypeface(font).show();
 ```
+
+
+### Customize Toast message TextSIze
+```
+. setTextSize(14)
+```
+
+Use this method to change Toast message text size ***DON'T FORGET THE `show()` METHOD!***
