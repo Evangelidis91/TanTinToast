@@ -48,31 +48,42 @@ To display an error Toast:
 ``` 
 TanTinToast.ErrorToast(this).setText("Error Toast").show()
 ```
+<img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/error.png" width="250">
 
 To display Success Toast:
 ``` 
 TanTinToast.SuccessToast(this).setText("Success Toast").show()
 ```
+<img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/success.png" width="250">
+
 
 To display Info Toast:
 ``` 
 TanTinToast.InfoToast(this).setText("Info Toast").show()
 ```
+<img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/info.png" width="250">
+
 
 To display Warning Toast:
 ``` 
 TanTinToast.WarningToast(this).setText("Warning Toast").show()
 ```
+<img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/warning.png" width="250">
+
 
 To display Normal Toast:
 ``` 
 TanTinToast.NormalToast(this).setText("Normal Toast").show()
 ```
+<img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/normal.png" width="250">
+
 
 To display Custom Toast:
 ``` 
 TanTinToast.CustomToast(this).setText("Custom Toast").show()
 ```
+<img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/custom.png" width="250">
+
 
 ## Using Java
 
@@ -151,9 +162,3 @@ Using Custom you can customize
 Use ```.setIcon(int)``` to set Toast icon.
 Use ```.setBAckground(int)``` to set Toast bacground.
 Use ```.setTextColor(int)``` to set Toast message textColor.
-
-Reference-style: 
-![alt text][logo]
-
-
-[logo]: https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/custom.png 
