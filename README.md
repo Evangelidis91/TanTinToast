@@ -152,5 +152,8 @@ Use ```.setIcon(int)``` to set Toast icon.
 Use ```.setBAckground(int)``` to set Toast bacground.
 Use ```.setTextColor(int)``` to set Toast message textColor.
 
+Reference-style: 
+![alt text][logo]
+
 
 [logo]: https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/custom.jpg
