@@ -32,7 +32,7 @@ class TanTinToast {
         }
 
         fun setTime(millis: Int): NormalToast{
-            toast.duration = millis
+            toast.duration = Toast.LENGTH_SHORT
             return this
         }
 
@@ -154,6 +154,11 @@ class TanTinToast {
 
         fun setText(message: String): CustomToast{
             layout.custom_toast_message.text = message
+            return this
+        }
+
+        fun setTextSize(dpSize: Int): CustomToast{
+            layout.custom_toast_message.setTextSize(TypedValue.COMPLEX_UNIT_SP, dpSize.toFloat())
             return this
         }
 
