@@ -41,7 +41,15 @@ You can display:
 * Normal Toast
 * Custom Toast
 
+
+## Using Kotlin
+
 To display an error Toast:
+``` 
+TanTinToast.ErrorToast(this).setText("Error Toast").show()
 ```
-Toasty.error(yourContext, "This is an error toast.", Toast.LENGTH_SHORT, true).show();
+
+To display Success Toast:
+``` 
+TanTinToast.SuccessToast(this).setText("Success Toast").show()
 ```
