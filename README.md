@@ -108,6 +108,9 @@ new TanTinToast.CustomToast(this).setText("Custom Toast").show();
 
 ### Customize methods
 ```
-* .setTime()
+* .setTime(Toast.LENGTH_LONG)
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gggff
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use ```Toast.LENGTH_LONG``` or ```Toast.LENGTH_SHORT``` for setting the displaying time.
+
+```
+* .setTypeface()
