@@ -34,12 +34,12 @@ dependencies {
 Using this library you can display very easy some already implemented Toast messages or create your own.
 
 You can display:
-Error Toast
-Success Toast
-Info Toast
-Warning Toast
-Normal Toast
-Custom Toast
+* Error Toast
+* Success Toast
+* Info Toast
+* Warning Toast
+* Normal Toast
+* Custom Toast
 
 To display an error Toast:
 ```
