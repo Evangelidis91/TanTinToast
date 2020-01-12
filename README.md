@@ -110,7 +110,7 @@ new TanTinToast.CustomToast(this).setText("Custom Toast").show();
 ```
 .setTime(Toast.LENGTH_LONG)
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use ```Toast.LENGTH_LONG``` or ```Toast.LENGTH_SHORT``` for setting the displaying time.
+Use ```Toast.LENGTH_LONG``` or ```Toast.LENGTH_SHORT``` for setting the displaying time.
 
 ### Customize Toast message FontFamily
 ```
@@ -124,4 +124,8 @@ import androidx.core.content.res.ResourcesCompat
 After that you have to create a Typeface variable
 ```
 val font : Typeface? = ResourcesCompat.getFont(this, R.font.yourFontFamily)
+```
+And finaly add the method like this
+```
+new TanTinToast.SuccessToast(this).setText("Success Toast").setTypeface(font).show();
 ```
