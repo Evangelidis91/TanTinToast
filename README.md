@@ -153,4 +153,4 @@ Use ```.setBAckground(int)``` to set Toast bacground.
 Use ```.setTextColor(int)``` to set Toast message textColor.
 
 
-https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/custom.jpg
+[logo]: https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/custom.jpg
