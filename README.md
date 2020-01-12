@@ -105,3 +105,8 @@ To display Custom Toast:
 ``` 
 new TanTinToast.CustomToast(this).setText("Custom Toast").show();
 ```
+
+### Customize methods
+
+* setTime()
+	rguf
