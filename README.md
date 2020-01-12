@@ -135,7 +135,15 @@ new TanTinToast.SuccessToast(this).setText("Success Toast").setTypeface(font).sh
 
 ### Customize Toast message TextSIze
 ```
-. setTextSize(14)
+.setTextSize(14)
 ```
+Use this method to change Toast message text size ***Inserted value declares sp value***
 
-Use this method to change Toast message text size ***DON'T FORGET THE `show()` METHOD!***
+
+
+### Using TanTin.Custom
+Using Custom you can customize
+* The icon.
+* The background.
+* The textColor.
+* All the previous customizations.
