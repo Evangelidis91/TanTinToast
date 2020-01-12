@@ -107,6 +107,7 @@ new TanTinToast.CustomToast(this).setText("Custom Toast").show();
 ```
 
 ### Customize methods
-
-* setTime()
-	rguf
+```
+* .setTime()
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gggff
