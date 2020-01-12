@@ -53,3 +53,18 @@ To display Success Toast:
 ``` 
 TanTinToast.SuccessToast(this).setText("Success Toast").show()
 ```
+
+To display Info Toast:
+``` 
+TanTinToast.InfoToast(this).setText("Info Toast").show()
+```
+
+To display Warning Toast:
+``` 
+TanTinToast.WarningToast(this).setText("Warning Toast").show()
+```
+
+To display Normal Toast:
+``` 
+TanTinToast.NormalToast(this).setText("Normal Toast").show()
+```
