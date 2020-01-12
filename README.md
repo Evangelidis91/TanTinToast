@@ -106,15 +106,15 @@ To display Custom Toast:
 new TanTinToast.CustomToast(this).setText("Custom Toast").show();
 ```
 
-### Customize methods
+### Customize Toast time
 ```
-* .setTime(Toast.LENGTH_LONG)
+.setTime(Toast.LENGTH_LONG)
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use ```Toast.LENGTH_LONG``` or ```Toast.LENGTH_SHORT``` for setting the displaying time.
 
-
+### Customize Toast message FontFamily
 ```
-* .setTypeface()
+.setTypeface(font)
 ```
 Use this method if you want to use a specific Font Family for the text. First you have to import the libraries below.
 ```
