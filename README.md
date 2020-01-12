@@ -116,8 +116,12 @@ new TanTinToast.CustomToast(this).setText("Custom Toast").show();
 ```
 * .setTypeface()
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use this method if you want to use a specific Font Family for the text. First you have to import the libraries below.
+Use this method if you want to use a specific Font Family for the text. First you have to import the libraries below.
 ```
 import android.graphics.Typeface
 import androidx.core.content.res.ResourcesCompat
+```
+After that you have to create a Typeface variable
+```
+val font : Typeface? = ResourcesCompat.getFont(this, R.font.yourFontFamily)
 ```
