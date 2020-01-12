@@ -141,9 +141,13 @@ Use this method to change Toast message text size ***Inserted value declares sp 
 
 
 
-### Using TanTin.Custom
+## Using TanTin.Custom
 Using Custom you can customize
 * The icon.
 * The background.
 * The textColor.
 * All the previous customizations.
+
+Use ```.setIcon(int)``` to set Toast icon.
+Use ```.setBAckground(int)``` to set Toast bacground.
+Use ```.setTextColor(int)``` to set Toast message textColor.
