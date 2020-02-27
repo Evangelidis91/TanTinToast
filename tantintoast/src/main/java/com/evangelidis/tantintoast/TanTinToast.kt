@@ -117,7 +117,7 @@ class TanTinToast {
         private val layout = layoutInflater.inflate(R.layout.success_toast_layout, null)
         private val toast = Toast(context.applicationContext)
 
-        private fun text(message: String): Success{
+        fun text(message: String): Success{
             layout.success_toast_message.text = message
             return this
         }
