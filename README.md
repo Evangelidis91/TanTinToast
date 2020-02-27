@@ -1,5 +1,5 @@
 # TanTinToast
-[![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)  [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/KEvangelidis)
+[![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)  [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/KEvangelidis)
 
 Create easly custom Toast messages for your android applications.
 
@@ -23,7 +23,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.Evangelidis91:TanTinToast:1.0.1'
+	implementation 'com.github.Evangelidis91:TanTinToast:1.0.2'
 }
 ```
 
@@ -46,41 +46,41 @@ You can display:
 
 To display an error Toast:
 ``` 
-TanTinToast.ErrorToast(this).setText("Error Toast").show()
+TanTinToast.Error(this).text("Error Toast").show()
 ```
 <img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/error.png" width="250">
 
 To display Success Toast:
 ``` 
-TanTinToast.SuccessToast(this).setText("Success Toast").show()
+TanTinToast.Success(this).text("Success Toast").show()
 ```
 <img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/success.png" width="250">
 
 
 To display Info Toast:
 ``` 
-TanTinToast.InfoToast(this).setText("Info Toast").show()
+TanTinToast.Info(this).text("Info Toast").show()
 ```
 <img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/info.png" width="250">
 
 
 To display Warning Toast:
 ``` 
-TanTinToast.WarningToast(this).setText("Warning Toast").show()
+TanTinToast.Warning(this).text("Warning Toast").show()
 ```
 <img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/warning.png" width="250">
 
 
 To display Normal Toast:
 ``` 
-TanTinToast.NormalToast(this).setText("Normal Toast").show()
+TanTinToast.Normal(this).text("Normal Toast").show()
 ```
 <img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/normal.png" width="250">
 
 
 To display Custom Toast:
 ``` 
-TanTinToast.CustomToast(this).setText("Custom Toast").show()
+TanTinToast.Custom(this).text("Custom Toast").show()
 ```
 <img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/custom.png" width="250">
 
@@ -89,45 +89,45 @@ TanTinToast.CustomToast(this).setText("Custom Toast").show()
 
 To display an error Toast:
 ``` 
-new TanTinToast.ErrorToast(this).setText("Error Toast ").show();
+new TanTinToast.Error(this).text("Error Toast ").show();
 ```
 
 To display Success Toast:
 ``` 
-new TanTinToast.SuccessToast(this).setText("Success Toast").show();
+new TanTinToast.Success(this).text("Success Toast").show();
 ```
 
 To display Info Toast:
 ``` 
-new TanTinToast.InfoToast(this).setText("Info Toast").show();
+new TanTinToast.Info(this).text("Info Toast").show();
 ```
 
 To display Warning Toast:
 ``` 
-new TanTinToast.WarningToast(this).setText("Warning Toast").show();
+new TanTinToast.Warning(this).text("Warning Toast").show();
 ```
 
 To display Normal Toast:
 ``` 
-new TanTinToast.NormalToast(this).setText("Normal Toast").show();
+new TanTinToast.Normal(this).text("Normal Toast").show();
 ```
 
 To display Custom Toast:
 ``` 
-new TanTinToast.CustomToast(this).setText("Custom Toast").show();
+new TanTinToast.Custom(this).text("Custom Toast").show();
 ```
 
 ### Customize Toast time
 ```
-.setTime(Toast.LENGTH_LONG)
+.time(Toast.LENGTH_LONG)
 ```
-Use ```Toast.LENGTH_LONG``` or ```Toast.LENGTH_SHORT``` for setting the displaying time.
+Use ```Toast.LENGTH_LONG``` or ```Toast.LENGTH_SHORT``` to set the displaying time.
 
 
 
 ### Customize Toast message FontFamily
 ```
-.setTypeface(font)
+.typeface(font)
 ```
 Use this method if you want to use a specific Font Family for the text. First you have to import the libraries below.
 ```
@@ -140,13 +140,13 @@ val font : Typeface? = ResourcesCompat.getFont(this, R.font.yourFontFamily)
 ```
 And finaly add the method like this
 ```
-new TanTinToast.SuccessToast(this).setText("Success Toast").setTypeface(font).show();
+new TanTinToast.Success(this).text("Success Toast").typeface(font).show();
 ```
 
 
 ### Customize Toast message TextSIze
 ```
-.setTextSize(14)
+.textSize(14)
 ```
 Use this method to change Toast message text size ***Inserted value declares sp value***
 
@@ -159,6 +159,6 @@ Using Custom you can customize
 * The textColor.
 * All the previous customizations.
 
-Use ```.setIcon(int)``` to set Toast icon.
-Use ```.setBAckground(int)``` to set Toast bacground.
-Use ```.setTextColor(int)``` to set Toast message textColor.
+Use ```.icon(int)``` to set Toast icon.
+Use ```.background(int)``` to set Toast background.
+Use ```.textColor(int)``` to set Toast message textColor.

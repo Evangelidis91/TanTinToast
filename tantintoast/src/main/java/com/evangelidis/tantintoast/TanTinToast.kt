@@ -15,61 +15,61 @@ import kotlinx.android.synthetic.main.warning_toast_layout.view.*
 
 class TanTinToast {
 
-    class NormalToast(private val context: Context){
+    class Normal(private val context: Context){
 
         private val layoutInflater: LayoutInflater = LayoutInflater.from(context)
         private val layout = layoutInflater.inflate(R.layout.normal_toast_layout, null)
-        val toast = Toast(context.applicationContext)
+        private val toast = Toast(context.applicationContext)
 
-        fun setText(message: String): NormalToast{
+        fun text(message: String): Normal{
             layout.normal_toast_message.text = message
             return this
         }
 
-        fun setTypeface(typeface: Typeface?): NormalToast{
+        fun typeface(typeface: Typeface?): Normal{
             layout.normal_toast_message.typeface = typeface
             return this
         }
 
-        fun setTime(millis: Int): NormalToast{
-            toast.duration = Toast.LENGTH_SHORT
+        fun time(millis: Int): Normal{
+            toast.duration = millis
             return this
         }
 
-        fun show(): NormalToast{
+        fun show(): Normal{
             toast.view = layout
             toast.show()
             return this
         }
     }
 
-    class ErrorToast(private val context: Context){
+    class Error(private val context: Context){
 
         private val layoutInflater: LayoutInflater = LayoutInflater.from(context)
         private val layout = layoutInflater.inflate(R.layout.error_toast_layout, null)
         private val toast = Toast(context.applicationContext)
 
-        fun setText(message: String): ErrorToast{
+        fun text(message: String): Error{
             layout.error_toast_message.text = message
             return this
         }
 
-        fun setTextSize(dpSize: Int): ErrorToast{
+        fun textSize(dpSize: Int): Error{
             layout.error_toast_message.setTextSize(TypedValue.COMPLEX_UNIT_SP, dpSize.toFloat())
             return this
         }
 
-        fun setTypeface(typeface: Typeface?): ErrorToast{
+        fun typeface(typeface: Typeface?): Error{
             layout.error_toast_message.typeface = typeface
             return this
         }
 
-        fun setTime(millis: Int): ErrorToast{
+        fun time(millis: Int): Error{
             toast.duration = millis
             return this
         }
 
-        fun show(): ErrorToast{
+        fun show(): Error{
             toast.duration = Toast.LENGTH_LONG
             toast.view = layout
             toast.show()
@@ -77,33 +77,33 @@ class TanTinToast {
         }
     }
 
-    class InfoToast(private val context: Context){
+    class Info(private val context: Context){
 
         private val layoutInflater: LayoutInflater = LayoutInflater.from(context)
         private val layout = layoutInflater.inflate(R.layout.info_toast_layout, null)
         private val toast = Toast(context.applicationContext)
 
-        fun setText(message: String): InfoToast{
+        fun text(message: String): Info{
             layout.info_toast_message.text = message
             return this
         }
 
-        fun setTextSize(dpSize: Int): InfoToast{
+        fun textSize(dpSize: Int): Info{
             layout.info_toast_message.setTextSize(TypedValue.COMPLEX_UNIT_SP, dpSize.toFloat())
             return this
         }
 
-        fun setTypeface(typeface: Typeface?): InfoToast{
+        fun typeface(typeface: Typeface?): Info{
             layout.info_toast_message.typeface = typeface
             return this
         }
 
-        fun setTime(millis: Int): InfoToast{
+        fun time(millis: Int): Info{
             toast.duration = millis
             return this
         }
 
-        fun show(): InfoToast{
+        fun show(): Info{
             toast.duration = Toast.LENGTH_LONG
             toast.view = layout //setting the view of custom toast layout
             toast.show()
@@ -111,34 +111,33 @@ class TanTinToast {
         }
     }
 
-    class SuccessToast(private val context: Context){
+    class Success(private val context: Context){
 
         private val layoutInflater: LayoutInflater = LayoutInflater.from(context)
         private val layout = layoutInflater.inflate(R.layout.success_toast_layout, null)
-
         private val toast = Toast(context.applicationContext)
 
-        fun setText(message: String): SuccessToast{
+        private fun text(message: String): Success{
             layout.success_toast_message.text = message
             return this
         }
 
-        fun setTextSize(dpSize: Int): SuccessToast{
+        fun textSize(dpSize: Int): Success{
             layout.success_toast_message.setTextSize(TypedValue.COMPLEX_UNIT_SP, dpSize.toFloat())
             return this
         }
 
-        fun setTypeface(typeface: Typeface?): SuccessToast{
+        fun typeface(typeface: Typeface?): Success{
             layout.success_toast_message.typeface = typeface
             return this
         }
 
-        fun setTime(millis: Int): SuccessToast{
+        fun time(millis: Int): Success{
             toast.duration = millis
             return this
         }
 
-        fun show(): SuccessToast{
+        fun show(): Success{
             toast.duration = Toast.LENGTH_LONG
             toast.view = layout //setting the view of custom toast layout
             toast.show()
@@ -146,82 +145,82 @@ class TanTinToast {
         }
     }
 
-    class CustomToast(private val context: Context){
+    class Custom(private val context: Context){
 
         private val layoutInflater: LayoutInflater = LayoutInflater.from(context)
         private val layout = layoutInflater.inflate(R.layout.custom_toast_layout, null)
-        val toast = Toast(context.applicationContext)
+        private val toast = Toast(context.applicationContext)
 
-        fun setText(message: String): CustomToast{
+        fun text(message: String): Custom{
             layout.custom_toast_message.text = message
             return this
         }
 
-        fun setTextSize(dpSize: Int): CustomToast{
+        fun textSize(dpSize: Int): Custom{
             layout.custom_toast_message.setTextSize(TypedValue.COMPLEX_UNIT_SP, dpSize.toFloat())
             return this
         }
 
-        fun setIcon(icon: Int): CustomToast{
+        fun icon(icon: Int): Custom{
             layout.custom_toast_image.visibility = View.VISIBLE
             layout.custom_toast_image.setBackgroundResource(icon)
             return this
         }
 
-        fun setBackground(background: Int):CustomToast{
+        fun background(background: Int):Custom{
             layout.toast_toast_background.setBackgroundResource(background)
             return this
         }
 
-        fun setTextColor(color: Int): CustomToast{
+        fun textColor(color: Int): Custom{
             layout.custom_toast_message.setTextColor(color)
             return this
         }
 
-        fun setTypeface(typeface: Typeface?): CustomToast{
+        fun typeface(typeface: Typeface?): Custom{
             layout.custom_toast_message.typeface = typeface
             return this
         }
 
-        fun setTime(millis: Int): CustomToast{
+        fun time(millis: Int): Custom{
             toast.duration = millis
             return this
         }
 
-        fun show(): CustomToast{
+        fun show(): Custom{
             toast.view = layout
             toast.show()
             return this
         }
     }
 
-    class WarningToast(private val context: Context) {
+    class Warning(private val context: Context) {
 
         private val layoutInflater: LayoutInflater = LayoutInflater.from(context)
         private val layout = layoutInflater.inflate(R.layout.warning_toast_layout, null)
         private val toast = Toast(context.applicationContext)
 
-        fun setText(message: String): WarningToast {
+        fun text(message: String): Warning {
             layout.warning_toast_message.text = message
             return this
         }
 
-        fun setTextSize(dpSize: Int): WarningToast {
+        fun textSize(dpSize: Int): Warning {
             layout.warning_toast_message.setTextSize(TypedValue.COMPLEX_UNIT_SP, dpSize.toFloat())
             return this
         }
 
-        fun setTypeface(typeface: Typeface?): WarningToast {
+        fun typeface(typeface: Typeface?): Warning {
             layout.warning_toast_message.typeface = typeface
             return this
         }
 
-        fun setTime(millis: Int): WarningToast {
+        fun time(millis: Int): Warning {
             toast.duration = millis
             return this
         }
 
-        fun show(): WarningToast {
+        fun show(): Warning {
             toast.view = layout //setting the view of custom toast layout
             toast.show()
             return this
