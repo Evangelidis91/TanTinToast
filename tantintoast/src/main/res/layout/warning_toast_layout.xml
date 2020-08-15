@@ -9,32 +9,33 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/toast_warning_background">
+        android:background="@drawable/toast_warning_background"
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/warning_toast_image"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
             android:layout_margin="8dp"
             android:maxWidth="20dp"
             android:maxHeight="20dp"
-            android:layout_gravity="center_vertical"
-            android:layout_centerVertical="true"
             android:src="@drawable/ic_warning" />
 
         <TextView
             android:id="@+id/warning_toast_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
             android:layout_margin="8dp"
+            android:layout_toRightOf="@+id/warning_toast_image"
             android:ellipsize="end"
+            android:paddingRight="10dp"
             android:textColor="#9F6000"
-            tools:text="Hello"
-            android:layout_toRightOf="@+id/warning_toast_image"/>
+            tools:text="Hello" />
     </RelativeLayout>
 
 </RelativeLayout>

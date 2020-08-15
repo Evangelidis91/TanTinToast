@@ -1,7 +1,5 @@
 package com.evangelidis.toaster
 
-import android.graphics.Color
-import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.evangelidis.tantintoast.TanTinToast
@@ -12,8 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        TanTinToast.SuccessToast(this)
-            .setText("Success Toast ")
+        TanTinToast.Warning(this).show()
+
+        TanTinToast.Success(this)
+            .text("Success Toastgjhkf")
             .show()
+
     }
 }
