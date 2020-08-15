@@ -23,7 +23,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.Evangelidis91:TanTinToast:1.1.0'
+	implementation 'com.github.Evangelidis91:TanTinToast:1.1.1'
 }
 ```
 
