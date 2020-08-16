@@ -80,9 +80,16 @@ TanTinToast.Normal(this).text("Normal Toast").show()
 
 To display Custom Toast:
 ``` 
-TanTinToast.Custom(this).text("Custom Toast").show()
+TanTinToast.Custom(this)
+    .text("Custom Toast")
+    .icon(R.drawable.icon)
+    .background(R.color.colorPrimaryDark)
+    .textColor(R.color.colorAccent)
+    .time(TanTinToast.LONG)
+    .typeface(R.font.montserrat)
+    .show()
 ```
-<img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/custom.png" width="250">
+<img src="https://github.com/Evangelidis91/TanTinToast/blob/master/app/src/main/res/drawable/custom_toast.png" width="250">
 
 
 ## Using Java
@@ -117,48 +124,40 @@ To display Custom Toast:
 new TanTinToast.Custom(this).text("Custom Toast").show();
 ```
 
+### Customize Toast text
+```
+.text("Any text")
+```
+
+
 ### Customize Toast time
 ```
-.time(Toast.LENGTH_LONG)
+.time(TanTinToast.LONG)
 ```
-Use ```Toast.LENGTH_LONG``` or ```Toast.LENGTH_SHORT``` to set the displaying time.
-
+Use ```TanTinToast.LONG``` to display toast for 3.5 seconds or ```TanTinToast.SHORT``` to display for 2 seconds.
 
 
 ### Customize Toast message FontFamily
 ```
-.typeface(font)
+.typeface(R.font.custom_font_family)
 ```
-Use this method if you want to use a specific Font Family for the text. First you have to import the libraries below.
-```
-import android.graphics.Typeface
-import androidx.core.content.res.ResourcesCompat
-```
-After that you have to create a Typeface variable
-```
-val font : Typeface? = ResourcesCompat.getFont(this, R.font.yourFontFamily)
-```
-And finaly add the method like this
-```
-new TanTinToast.Success(this).text("Success Toast").typeface(font).show();
-```
+You can just pass any file under font folder
 
 
 ### Customize Toast message TextSIze
 ```
-.textSize(14)
+.textSize(16)
 ```
 Use this method to change Toast message text size ***Inserted value declares sp value***
-
 
 
 ## Using TanTin.Custom
 Using Custom you can customize
 * The icon.
-* The background.
+* The backgroundColor.
 * The textColor.
 * All the previous customizations.
 
 Use ```.icon(int)``` to set Toast icon.
-Use ```.background(int)``` to set Toast background.
+Use ```.background(int)``` to set Toast backgroundColor.
 Use ```.textColor(int)``` to set Toast message textColor.
