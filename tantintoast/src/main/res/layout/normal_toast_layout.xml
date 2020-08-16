@@ -21,7 +21,6 @@
             android:layout_gravity="center_vertical"
             android:layout_margin="8dp"
             android:ellipsize="end"
-            android:paddingRight="10dp"
             android:textColor="#FFF"
             tools:text="Hello" />
     </RelativeLayout>
