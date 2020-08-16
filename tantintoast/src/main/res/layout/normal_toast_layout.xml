@@ -20,6 +20,7 @@
             android:layout_centerVertical="true"
             android:layout_gravity="center_vertical"
             android:layout_margin="8dp"
+            android:padding="5dp"
             android:ellipsize="end"
             android:textColor="#FFF"
             tools:text="Hello" />
